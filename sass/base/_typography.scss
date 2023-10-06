@@ -1,0 +1,35 @@
+//*Global*//
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+//*Text*//
+
+$font-weight: (
+    light: 300,
+    regular: 400,
+    medium: 500,
+    bold: 700,
+);
+
+///Header
+
+//logo
+
+@mixin cursive__logo {
+    font-size: 27px;
+    font-family: "shrikhand", cursive;
+}
+
+//titre entete
+
+@mixin title__header {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: map-get($font-weight,bold );
+}
