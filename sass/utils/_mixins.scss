@@ -1,0 +1,26 @@
+/**** Responsive ****/
+
+@mixin table__responsive{
+    @media all and (min-width: map-get($breakpoints, table)) {
+        @content;
+    }
+}
+
+@mixin desktop__responsive {
+    @media all and (min-width: map-get($breakpoints, desktop)) {
+        @content; 
+    }
+}
+
+/**** shadow ****/
+
+@mixin object-shadow ($color: $shadow) {
+    box-shadow: 0 4px 10px 0 $color;
+}
+
+/**** Gradient ****/
+
+@mixin gradient ($orientation: $degree) {
+    background: linear-gradient($degree, $color-primary, $color-secondary); 
+        @content;
+    }
