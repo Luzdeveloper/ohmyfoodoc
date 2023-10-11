@@ -1,4 +1,4 @@
-.footer-container {
+.footer {
   width: 100%;
   padding: 22px 25px;
   background-color: darken($white, 75%);
@@ -26,9 +26,7 @@
       margin: 0;
     }
   }
-}
-
-&__bloc {
+  &__bloc {
   display: flex;
   flex-direction: column;
 
@@ -65,4 +63,4 @@
     }
   }
 }
-
+}
