@@ -50,7 +50,7 @@
 /// Fonctionnement ///
 
 .fonction {
-  width: $whitemobile;
+  width: $whidthmobile;
   margin: auto;
   padding: 50px 0;
 
@@ -141,12 +141,12 @@
   background-color: $lightgrey;
 
   &__title {
-    width: $whitemobile;
+    width: $whidthmobile;
     margin: 20px auto;
   }
 
   &__container {
-    width: $whitemobile;
+    width: $whidthmobile;
     margin: auto;
     @include desktop__responsive;
 
