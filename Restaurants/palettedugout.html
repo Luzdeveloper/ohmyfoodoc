@@ -20,8 +20,8 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style/style.scss" />
-    <title>Palette du goût</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <title>La palette du goût</title>
 </head>
 <body class="body">
 
@@ -36,16 +36,17 @@
         </div>
     </header>
     <main>
-        <section class="menu">
+        <div class="menu">
 
             <!--Bannière-->
-            <img class="menu__banniere" src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant la palette du goût">
+            <img class="menu__banniere" src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant À la française">
 
             <!--Contenu menu--> 
-            <div class="menu__content">
+            <section class="menu__content">
                 <div class="menu__info">
-                    <h2 class="menu__title">La palette du goût</h2>
-                    <button class="button__like"><i class="fa-regular fa-heart"</button>
+                    <h2 class="menu__title">À la française</h2>
+                    <button class="button__like"><i class="fa-regular fa-heart"></i>
+                    </button>
                 </div>
 
                 <!--Entrée-->
@@ -54,32 +55,32 @@
 
                     <!--Liste plats-->
                     <div class="plats__list">
-                        <a href="#" class="plat plat--1">
+                        <div  class="plat">
                             <div class="plat__info">
-                                <h3 class="plat__title">Fricassée d'escargot</h3>
-                                <h4 class="plat__compo">Au piment d'espelette</h4>
+                                <h3 class="plat__title">Tartare de poulpe acidulé</h3>
+                                <h4 class="plat__compo">Aux zestes d'orange</h4>
                             </div>
                             <strong class="plat__prix">25€</strong>
-                            <div class="plat__confirm"><i class="fa-solid fa-circle-check"</div>
-                        </a>
+                            <div class="plat__confirm"><i class="fa-solid fa-circle-check"></i></div>
+                        </div>
                         
-                            <a href="#" class="plat plat--2">
+                            <div class="plat plat--2">
                                 <div class="plat__info">
-                                    <h3 class="plat__title">Foie gras de canard mi-cuit</h3>
-                                    <h4 class="plat__compo">Et ses copeaux de truffe noire</h4>
+                                    <h3 class="plat__title">Velouté de légumes d'antan</h3>
+                                    <h4 class="plat__compo">Carotte, panais, topinambour</h4>
                                 </div>
                                 <strong class="plat__prix">35€</strong>
-                                <div class="plat__confirm"><i class="fa-solid fa-circle-check"</div>
-                            </a>
+                                <div class="plat__confirm"><i class="fa-solid fa-circle-check"></i></div>
+                            </div>
 
-                                <a href="#" class="plat plat--3">
+                                <div class="plat plat--3">
                                     <div class="plat__info">
-                                        <h3 class="plat__title">Oeuf au plat</h3>
-                                        <h4 class="plat__compo">Assaisonné à la truffe sur lit de caviar</h4>
+                                        <h3 class="plat__title">Soupe à l'oignon</h3>
+                                        <h4 class="plat__compo">Revisité</h4>
                                     </div>
                                     <strong class="plat__prix">20€</strong>
-                                    <div class="plat__confirm"><i class="fa-solid fa-circle-check"</div>
-                                </a>
+                                    <div class="plat__confirm"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
                     </div>
                 </div>
 
@@ -91,32 +92,32 @@
                     <!--Liste plats-->
 
                     <div class="plats__list">
-                        <a href="#" class="plat plat--4">
+                        <div class="plat plat--4">
                             <div class="plat__info">
-                                <h3 class="plat__title">Filet de boeuf aux herbes</h3>
-                                <h4 class="plat__compo">Accompagné de sa ribambelle de légumes</h4>
+                                <h3 class="plat__title">Coquille Saint-Jacques</h3>
+                                <h4 class="plat__compo">Accompagnées d'une purée de panais</h4>
                             </div>
                             <strong class="plat__prix">40€</strong>
-                            <div class="plat__confirm"><i class="fa-solid fa-circle-check"</div>
-                        </a>
+                            <div class="plat__confirm"><i class="fa-solid fa-circle-check"></i></div>
+                            </div>
                         
-                            <a href="#" class="plat plat--5">
+                            <div class="plat plat--5">
                                 <div class="plat__info">
-                                    <h3 class="plat__title">Parmentier de queue de boeuf</h3>
-                                    <h4 class="plat__compo">À la truffe noire sur sa purée de panais</h4>
+                                    <h3 class="plat__title">Magret de canard</h3>
+                                    <h4 class="plat__compo">Et parmentier de pommes de terre</h4>
                                 </div>
                                 <strong class="plat__prix">35€</strong>
-                                <div class="plat__confirm"><i class="fa-solid fa-circle-check"</div>
-                            </a>
+                                <div class="plat__confirm"><i class="fa-solid fa-circle-check"></i></div>
+                                </div>
 
-                                <a href="#" class="plat plat--6">
+                                <div class="plat plat--6">
                                     <div class="plat__info">
-                                        <h3 class="plat__title">Filet de turbot</h3>
-                                        <h4 class="plat__compo">Aux agrumes</h4>
+                                        <h3 class="plat__title">Pigeonneau d'Ille-et-Vilaine</h3>
+                                        <h4 class="plat__compo">Sur son lit de gnocchis de légumes</h4>
                                     </div>
                                     <strong class="plat__prix">44€</strong>
-                                    <div class="plat__confirm"><i class="fa-solid fa-circle-check"</div>
-                                </a>
+                                    <div class="plat__confirm"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
                     </div>
                 </div>
 
@@ -127,35 +128,42 @@
 
                     <!--Liste plats-->
                     <div class="plats__list">
-                        <a href="#" class="plat plat--7">
+                        <div class="plat plat--7">
                             <div class="plat__info">
-                                <h3 class="plat__title">Paris Brest</h3>
-                                <h4 class="plat__compo">Revisité</h4>
+                                <h3 class="plat__title">Pétales de violettes glacés</h3>
+                                <h4 class="plat__compo">Et purée de noisettes</h4>
                             </div>
                             <strong class="plat__prix">18€</strong>
-                            <div class="plat__confirm"><i class="fa-solid fa-circle-check"</div>
-                        </a>
+                            <div class="plat__confirm"><i class="fa-solid fa-circle-check"></i></div>
+                            </div>
                         
-                            <a href="#" class="plat plat--8">
+                            <div class="plat plat--8">
                                 <div class="plat__info">
-                                    <h3 class="plat__title">Macaron au chocolat d'exception</h3>
-                                    <h4 class="plat__compo">Et glace à la vanille de Madagascar</h4>
+                                    <h3 class="plat__title">Fondant au chocolat</h3>
+                                    <h4 class="plat__compo">Revisité</h4>
                                 </div>
                                 <strong class="plat__prix">22€</strong>
-                                <div class="plat__confirm"><i class="fa-solid fa-circle-check"</div>
-                            </a>
+                                <div class="plat__confirm"><i class="fa-solid fa-circle-check"></i></div>
+                                </div>
 
-                                <a href="#" class="plat plat--9">
+                                <div class="plat plat--9">
                                     <div class="plat__info">
-                                        <h3 class="plat__title">Mousse au chocolat</h3>
-                                        <h4 class="plat__compo">Au piment d'Espelette et à la truffe noire</h4>
+                                        <h3 class="plat__title">Millefeuille croustillant</h3>
+                                        <h4 class="plat__compo">Myrtille et pâte d'amande</h4>
                                     </div>
                                     <strong class="plat__prix">23€</strong>
-                                    <div class="plat__confirm"><i class="fa-solid fa-circle-check"</div>
-                                </a>
+                                    <div class="plat__confirm"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
                     </div>
                 </div>
+
+                <!--Bouton commander-->
+
+                <div class="menu__order">
+                  <button type="submit" class="intro__btngradient">Commander</button>
+                </div>
         </section>
+        </div>
     </main>
     <footer class="footer">
         <h1 class="footer__logo">Ohmyfood</h1>
@@ -174,6 +182,4 @@
           >
         </div>
       </footer>
-    
-</body>
 </html>
