@@ -5,13 +5,13 @@
 
 
 @mixin table__responsive{
-    @media all and (min-width: map-get($breakpoints, tablet)) {
+    @media screen and (min-width: $breakpointstab) {
         @content;
     }
 }
 
 @mixin desktop__responsive {
-    @media all and (min-width: map-get($breakpoints, desktop)) {
+    @media screen and (max-width: $breakpointsdesktop) {
         @content; 
     }
 }

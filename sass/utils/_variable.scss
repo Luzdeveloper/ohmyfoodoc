@@ -7,7 +7,7 @@ $grey: #EAEAEA;
 $white: #ffffff;
 $shadow: #d5d5d5;
 $black: #353535;
-$lightgrey: #F6F6F6;
+$lightgrey: #F3F3F3;
 $icon: #7E7E7E;
 
 /** Gradient **/ 
@@ -20,7 +20,5 @@ $whidthmobile: 90%;
 
 /*** Responsive ***/ 
 
-$breakpoints: (
-    tablet: 768px,
-    desktop: 1024px,
-);
+$breakpointstab: 768px;
+$breakpointsdesktop: 1024px;

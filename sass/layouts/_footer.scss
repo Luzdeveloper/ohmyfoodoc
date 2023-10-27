@@ -41,24 +41,26 @@
   display: flex;
   align-items: center;
   font-weight: map-get($font-weight, medium);
-  gap: 7px;
+  gap: 10px;
 
   @include table__responsive {
-    width: 190px;
+    width: 100%;
   }
   &--icon {
     display: flex;
+    flex-direction: flex-start;
     justify-content: center;
     align-items: center;
-    width: 16px;
+    width: 100%;
     height: 13px;
     font-size: 0.813rem;
   }
   &--info {
     @include table__responsive {
       & p {
-        width: 130px;
-        height: 20px;
+        width: 100%;
+        justify-content: flex-start;
+        color: white;
       }
     }
   }
