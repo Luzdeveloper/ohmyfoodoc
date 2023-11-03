@@ -1,45 +1,86 @@
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth; /* Ajoute l'animation de scroll */
+
+.menu {
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles pour mobile */
-
-.header {
-    background-color: #ffffff;
-    padding: 10px 20px;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+.menu__banniere {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
 }
 
-.menu__plats {
-    margin-bottom: 20px;
+.menu__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.menu-subtitle {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .plat {
+  margin-bottom: 10px;
+  .plat__info {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
-}
-
-/* Media queries pour tablette */
-
-@media screen and (min-width: 768px) {
-    .menu__plats {
-        display: flex;
-        justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 5px;
+    .plat__title {
+      font-size: 18px;
+      font-weight: bold;
     }
-}
-
-/* Media queries pour desktop */
-
-@media screen and (min-width: 1024px) {
-    .menu__plats {
-        justify-content: space-between;
+    .plat__compo {
+      font-size: 14px;
+      
     }
+  }
+  .plat__prix {
+    font-size: 18px;
+    font-weight: bold;
+    color: $color-primary;
+  }
+  .plat__confirm {
+    color: $color-secondary;
+    font-size: 20px;
+    margin-left: auto;
+  }
 }
+
+.menu__order {
+  text-align: center;
+  margin-top: 20px;
+  .intro__btngradient {
+    background: linear-gradient(to right, $color-primary, $color-secondary);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}
+
+// Mixin pour les styles spécifiques aux tablettes
+@mixin tablet__responsive {
+    .menu {
+      max-width: 600px;
+      margin: 20px auto;
+    }
+  }
+  
+  // Mixin pour les styles spécifiques aux desktops
+  @mixin desktop__responsive {
+    .menu {
+      max-width: 800px;
+    }
+  }
+  
+
+  

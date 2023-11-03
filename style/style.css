@@ -1,5 +1,5 @@
+@charset "UTF-8";
 /***Couleurs***/
-/** Gradient **/
 /** width mobile **/
 /*** Responsive ***/
 /**** Responsive ****/
@@ -21,20 +21,20 @@ a {
 .intro__btngradient {
   width: 218px;
   height: 50px;
-  color: #ffffff;
+  color: white;
   font-size: 1rem;
-  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   border-radius: 25px;
   border: none;
-  font-weight: 500;
-  box-shadow: 0 4px 10px 0 #d5d5d5;
+  font-weight: medium;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   margin: 27px 75px 57px 82px;
   transition: opacity 300ms ease-in-out;
 }
 .intro__btngradient:hover {
   opacity: 0.88;
-  box-shadow: 0 4px 10px 0 #afafaf;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .intro__btngradient--long {
   width: 50%;
@@ -44,38 +44,32 @@ a {
 
 .button__like {
   width: 28px;
-  z-index: 0;
+  height: 28px;
   position: relative;
-  font-family: "Font Awesome 6 Free";
   font-size: 25px;
+  cursor: pointer;
+  background: linear-gradient(to right, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border: none;
   padding: 0;
-  border: transparent 0px solid;
-  background-color: transparent;
-  -webkit-text-stroke: 1px white;
+  transition: background-position 0.4s ease;
+}
+
+.button__like {
   cursor: pointer;
 }
-.button__like:hover::after {
-  z-index: 1;
-  animation: heart-fill 900ms forwards cubic-bezier(0.65, 1.01, 0.98, 1.06);
+
+.button__like i.fas.fa-heart {
+  font-size: 25px;
+  color: #9356DC; /* Couleur du cœur non rempli par défaut */
+  transition: color 0.4s ease; /* Transition de la couleur du texte */
 }
-.button__like::after {
-  z-index: -1;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  font-size: 1.563rem;
-  content: "\f004";
-  color: transparent;
-  background: linear-gradient(357deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-          background-clip: text;
-  transform-origin: bottom;
-  -webkit-text-stroke: 1px;
+
+.button__like:hover i.fas.fa-heart,
+.button__like:active i.fas.fa-heart {
+  color: #FF79DA; /* Couleur de remplissage du cœur au survol et au clic */
 }
 
 body, html {
@@ -87,7 +81,7 @@ body, html {
 .loader {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -105,7 +99,7 @@ body, html {
   border-radius: 50%;
   border-top: 5px solid transparent;
   animation: rotate 2s linear infinite;
-  position: absolute;
+  position: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -162,7 +156,7 @@ body, html {
 .footer {
   width: 100%;
   padding: 22px 25px;
-  background-color: #404040;
+  background-color: var(--Grey, #353535);
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -176,6 +170,7 @@ body, html {
 }
 .footer p {
   margin: 5px 0;
+  color: white;
 }
 .footer__logo {
   margin: 0 0 16px 0;
@@ -203,7 +198,7 @@ body, html {
 .footer__nav {
   display: flex;
   align-items: center;
-  font-weight: 500;
+  font-weight: medium;
   gap: 10px;
 }
 @media screen and (min-width: 768px) {
@@ -230,24 +225,26 @@ body, html {
 
 .info__location {
   display: flex;
+  flex-direction: center;
   height: 50px;
   justify-content: center;
   align-items: center;
-  background-color: #ebebeb;
-  box-shadow: inset 0 10px 8px -5px #d5d5d5;
+  background: var(--Grey-2, #EAEAEA);
   gap: 17px;
 }
 
 .info__icon {
   display: flex;
+  flex-direction: center;
   align-items: center;
 }
 
-.loc {
-  position: relative;
+.location-container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 109px;
+  height: 100vh;
+  background-color: lightgrey;
 }
 
 .intro {
@@ -257,7 +254,7 @@ body, html {
   justify-content: center;
   margin: auto;
   padding: 20px 0;
-  background-color: whitesmoke;
+  background-color: #f6f6f6;
   text-align: center;
 }
 .intro__title {
@@ -268,11 +265,11 @@ body, html {
   width: 85%;
   margin: 0;
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: light;
 }
 
 .fonction {
-  width: 90%;
+  width: 100%;
   margin: auto;
   padding: 50px 0;
 }
@@ -302,9 +299,9 @@ body, html {
   margin: 15px 0;
   border-radius: 20px;
   border: none;
-  gap: 4%;
-  background-color: #f3f3f3;
-  box-shadow: 0 4px 10px 0 #d5d5d5;
+  gap: 4px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 @media screen and (max-width: 1024px) {
   .fonction__etape {
@@ -314,7 +311,7 @@ body, html {
 }
 .fonction__etape:hover {
   background-color: #f2eafb;
-  box-shadow: 0 4px 10px 0 #bcbcbc;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .fonction__etape:hoverfonction__etape--icon {
   color: #9356DC;
@@ -325,12 +322,10 @@ body, html {
   justify-content: center;
   text-align: center;
   position: relative;
-  left: -19px;
-  bottom: -5px;
   height: 24px;
   width: 24px;
   border-radius: 50%;
-  color: #ffffff;
+  color: white;
   background-color: #9356DC;
   padding: 1%;
 }
@@ -353,14 +348,14 @@ body, html {
   flex-direction: column;
   margin: auto;
   padding: 20px 0 66px 0;
-  background-color: #F3F3F3;
+  background-color: lightgrey;
 }
 .restaurant__title {
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
 }
 .restaurant__container {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 @media screen and (min-width: 768px) {
@@ -379,8 +374,8 @@ body, html {
   margin: auto;
   margin-bottom: 18px;
   border-radius: 15px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 10px 0 #d5d5d5;
+  background-color: white;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 @media screen and (min-width: 768px) {
   .restaurant__cards {
@@ -390,7 +385,7 @@ body, html {
   }
 }
 .restaurant__cards:hover {
-  box-shadow: 0 4px 10px 0 #bcbcbc;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .restaurant__cards--image {
   position: relative;
@@ -416,7 +411,7 @@ body, html {
   border-radius: 2px;
   background-color: #99E2D0;
   color: #278870;
-  font-weight: 500;
+  font-weight: medium;
 }
 .restaurant__cards--info {
   display: flex;
@@ -450,43 +445,69 @@ body, html {
   font-size: 1.563rem;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth; /* Ajoute l'animation de scroll */
+.menu {
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles pour mobile */
-.header {
-  background-color: #ffffff;
-  padding: 10px 20px;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
-}
-
-.menu__plats {
+.menu__banniere {
+  width: 100%;
+  border-radius: 10px;
   margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.menu-subtitle {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .plat {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 10px;
-  padding: 10px;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.plat .plat__info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.plat .plat__info .plat__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.plat .plat__info .plat__compo {
+  font-size: 14px;
+}
+.plat .plat__prix {
+  font-size: 18px;
+  font-weight: bold;
+  color: #9356DC;
+}
+.plat .plat__confirm {
+  color: #FF79DA;
+  font-size: 20px;
+  margin-left: auto;
 }
 
-/* Media queries pour tablette */
-@media screen and (min-width: 768px) {
-  .menu__plats {
-    display: flex;
-    justify-content: space-around;
-  }
+.menu__order {
+  text-align: center;
+  margin-top: 20px;
 }
-/* Media queries pour desktop */
-@media screen and (min-width: 1024px) {
-  .menu__plats {
-    justify-content: space-between;
-  }
+.menu__order .intro__btngradient {
+  background: linear-gradient(to right, #9356DC, #FF79DA);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -18,13 +18,13 @@
 
 /**** shadow ****/
 
-@mixin object-shadow ($color: $shadow) {
-    box-shadow: 0 4px 10px 0 $color;
+@mixin object-shadow  {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 /**** Gradient ****/
 
-@mixin gradient ($orientation: $degree) {
-    background: linear-gradient($degree, $color-primary, $color-secondary); 
+@mixin gradient  {
+    background: linear-gradient( $color-primary, $color-secondary); 
         @content;
     }

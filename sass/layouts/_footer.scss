@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   padding: 22px 25px;
-  background-color: darken($white, 75%);
+  background-color: var(--Grey, #353535);
 
   @include table__responsive {
     display: flex;
@@ -14,6 +14,7 @@
 
   & p {
     margin: 5px 0;
+    color: white;
   }
 
   &__logo {
@@ -40,7 +41,7 @@
 &__nav {
   display: flex;
   align-items: center;
-  font-weight: map-get($font-weight, medium);
+  font-weight: medium;
   gap: 10px;
 
   @include table__responsive {

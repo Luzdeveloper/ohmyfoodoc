@@ -1,12 +1,12 @@
 .intro__btngradient {
     width:  218px;
     height: 50px;
-    color: $white;
+    color: white;
     font-size: 1rem;
     @include gradient;
     border-radius: 25px;
     border: none;
-    font-weight: map-get($font-weight, medium );
+    font-weight: medium;
     @include object-shadow;
     cursor: pointer;
     margin: 27px 75px 57px 82px;
@@ -14,7 +14,7 @@
 
     &:hover {
         opacity: 0.88;
-        @include object-shadow(darken($shadow,15%))
+        @include object-shadow
     }
 
     &--long {
@@ -27,37 +27,34 @@
 
 .button__like {
     width: 28px;
-    z-index: 0;
+    height: 28px;
     position: relative;
-    font-family: "Font Awesome 6 Free";
     font-size: 25px;
-    padding: 0;
-    border: transparent 0px solid;
-    background-color: transparent;
-    -webkit-text-stroke: 1px white;
     cursor: pointer;
+    background: linear-gradient(to right, $color-primary, $color-secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border: none;
+    padding: 0;
+    transition: background-position 0.4s ease;
+  }
+  
 
-    &:hover{
-        &::after{
-            z-index: 1;
-            animation: heart-fill 900ms forwards cubic-bezier(.65,1.01,.98,1.06);
-        }
-    }
-    &::after{
-        z-index: -1;
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;  
-        left: 0;
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-        font-size: 1.563rem;
-        content: "\f004"; 
-        color: transparent;
-        @include gradient(45deg);
-        background-clip: text;
-        transform-origin: bottom;
-        -webkit-text-stroke: 1px; }
-}
+  .button__like {
+    cursor: pointer;
+  }
+  
+  .button__like i.fas.fa-heart {
+    font-size: 25px;
+    color: $color-primary; /* Couleur du cœur non rempli par défaut */
+    transition: color 0.4s ease; /* Transition de la couleur du texte */
+  }
+  
+  .button__like:hover i.fas.fa-heart,
+  .button__like:active i.fas.fa-heart {
+    color: $color-secondary; /* Couleur de remplissage du cœur au survol et au clic */
+  }
+  
+  
+  
