@@ -1,86 +1,134 @@
+// Variables pour la mise en page responsive
+$breakpoint-small: 768px;
+$breakpoint-medium: 992px;
 
+// Styles de base (mobile-first)
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .menu {
-  background-color: #f6f6f6;
-  padding: 20px;
-  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+  .plat {
+    opacity: 0; // Caché par défaut
+    transform: translateY(20px); // Décalage vers le bas par défaut
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    &:hover {
+      .plat__confirm {
+        right: 15px; // Affichage lors du survol
+      }
+    }
+  }
+  &:hover {
+    .plat {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 .menu__banniere {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  height: 200px;
   object-fit: cover;
 }
 
-.menu__title {
-  font-size: 24px;
-  margin-bottom: 10px;
+.menu__content {
+  padding: 20px;
 }
 
 .menu-subtitle {
   font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
 .plat {
-  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 100%;
+  position: relative;
   .plat__info {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
-    .plat__title {
-      font-size: 18px;
-      font-weight: bold;
+    h3.plat__title {
+      font-size: 20px;
+      margin: 0 0 5px;
     }
-    .plat__compo {
-      font-size: 14px;
-      
+    h4.plat__compo {
+      font-size: 16px;
+      margin: 0;
+      color: #777;
     }
   }
   .plat__prix {
-    font-size: 18px;
-    font-weight: bold;
-    color: $color-primary;
+    font-size: 24px;
+    margin-top: 10px;
   }
   .plat__confirm {
-    color: $color-secondary;
-    font-size: 20px;
-    margin-left: auto;
+    position: absolute;
+    right: -30px; // Caché par défaut
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    i.fa-circle-check {
+      color: green;
+      font-size: 20px;
+      transition: transform 0.3s ease; // Ajout d'une transition pour l'effet de déroulement
+    }
   }
 }
 
 .menu__order {
   text-align: center;
-  margin-top: 20px;
   .intro__btngradient {
-    background: linear-gradient(to right, $color-primary, $color-secondary);
+    background: linear-gradient(to right, #ff8a00, #e52e71);
     border: none;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 25px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
     cursor: pointer;
   }
 }
 
-// Mixin pour les styles spécifiques aux tablettes
-@mixin tablet__responsive {
-    .menu {
-      max-width: 600px;
-      margin: 20px auto;
-    }
+// Media queries pour tablettes
+@media (min-width: $breakpoint-small) {
+  .menu__banniere {
+    height: 300px;
   }
-  
-  // Mixin pour les styles spécifiques aux desktops
-  @mixin desktop__responsive {
-    .menu {
-      max-width: 800px;
-    }
-  }
-  
+}
 
-  
+// Media queries pour écrans de bureau
+@media (min-width: $breakpoint-medium) {
+  .main-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu {
+    width: 30%;
+    margin-right: 20px;
+  }
+
+  .menu__banniere {
+    height: 400px;
+  }
+}
+
