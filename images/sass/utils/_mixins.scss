@@ -1,0 +1,30 @@
+/**** Responsive ****/
+@mixin circle {
+    border-radius:  50%;
+}
+
+
+@mixin table__responsive{
+    @media screen and (min-width: $breakpointstab) {
+        @content;
+    }
+}
+
+@mixin desktop__responsive {
+    @media screen and (max-width: $breakpointsdesktop) {
+        @content; 
+    }
+}
+
+/**** shadow ****/
+
+@mixin object-shadow  {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+/**** Gradient ****/
+
+@mixin gradient  {
+    background: linear-gradient( $color-primary, $color-secondary); 
+        @content;
+    }
