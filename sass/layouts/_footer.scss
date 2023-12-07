@@ -3,14 +3,14 @@
   padding: 22px 25px;
   background-color: var(--Grey, #353535);
 
-  @include table__responsive {
+  /*@include table__responsive {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     justify-content: flex-start;
     height: 114px;
     gap: 16px;
-  }
+  }*/
 
   & p {
     margin: 5px 0;
@@ -23,20 +23,20 @@
     font-size: 1.125rem;
     color: white;
 
-    @include desktop__responsive {
+    /*@include desktop__responsive {
       width: 137px;
       margin: 0;
-    }
+    }*/
   }
   &__bloc {
   display: flex;
   flex-direction: column;
 
-  @include table__responsive {
+ /* @include table__responsive {
     flex-direction: row;
     align-items: center;
     gap: 7px;
-  }
+  }*/
 }
 
 &__nav {
@@ -45,9 +45,9 @@
   font-weight: medium;
   
 
-  @include table__responsive {
+ /* @include table__responsive {
     width: 100%;
-  }
+  }*/
   &--icons {
     display: flex;
     flex-direction: flex-start;
@@ -57,13 +57,13 @@
   }
   &--info {
     color: white;
-    @include table__responsive {
+    /*@include table__responsive {
       & p {
         width: 100%;
         justify-content: flex-start;
         color: white;
-      }
+      }*/
     }
   }
 }
-}
+

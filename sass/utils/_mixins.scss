@@ -1,20 +1,8 @@
-/**** Responsive ****/
+
 @mixin circle {
     border-radius:  50%;
 }
 
-
-@mixin table__responsive{
-    @media screen and (min-width: $breakpointstab) {
-        @content;
-    }
-}
-
-@mixin desktop__responsive {
-    @media screen and (max-width: $breakpointsdesktop) {
-        @content; 
-    }
-}
 
 /**** shadow ****/
 

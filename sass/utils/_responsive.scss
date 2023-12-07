@@ -1,0 +1,11 @@
+@mixin respond-to($breakpointstab) {
+    @media screen and (min-width: $breakpointstab) {
+        @content;
+    }
+}
+
+@mixin respond-to($breakpointsdesktop){
+    @media screen and (min-width: $breakpointsdesktop){
+        @content
+    }
+}

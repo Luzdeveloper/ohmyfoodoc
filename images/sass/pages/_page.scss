@@ -8,6 +8,7 @@
   align-items: center;
   background: var(--Grey-2, #EAEAEA);
   gap: 17px;
+  box-shadow: 10px 10px 10px 10px black;
 }
 
 .info__icon {
@@ -22,6 +23,7 @@
   align-items: center;
   height: 100vh;
   background-color: lightgrey;
+  box-shadow: 0px 2px 4px 0px black;
 }
 
 /// Intro ///
@@ -162,13 +164,13 @@
   &__container {
     width: 100%;
     margin: auto;
-    @include desktop__responsive;
+   /* @include desktop__responsive;
 
     @include table__responsive {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-    }
+    }*/
   }
 }
 

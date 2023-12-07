@@ -1,25 +1,41 @@
 .header {
-    padding: 2%;
+    display: flex;
+    width: 375px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: -0.5px;
+    flex-shrink: 0;
+    background: var(--White,#fff);
+
+    &__container{
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
 
 &__logo {
-    margin: 0;
-    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 36px;
+    padding: 0px 19px 0px 16px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
     @include cursive__logo;
 }
 
-&__return {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 5%;
-    width: 20px;
-    height: 20px;
-    top: 35%;
-    font-size: 1.25rem;
+&__back {
+    position: relative;
+    font-size: 1.2rem;
 
-    @include desktop__responsive{
+    /*@include desktop__responsive{
         font-size: 2rem;
-    }
+    }*/
 }
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
