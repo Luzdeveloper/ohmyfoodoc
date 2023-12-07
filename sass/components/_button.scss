@@ -26,12 +26,12 @@
 
 
 .button__like {
-    width: 28px;
-    height: 28px;
+    width: 15%;
+    flex-shrink: 0;
     position: relative;
     font-size: 25px;
     cursor: pointer;
-    background: linear-gradient(to right, $color-primary, $color-secondary);
+    background: #000;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -47,7 +47,7 @@
   
   .button__like i.fas.fa-heart {
     font-size: 25px;
-    color: $color-primary; /* Couleur du cœur non rempli par défaut */
+    color: #000; /* Couleur du cœur non rempli par défaut */
     transition: color 0.4s ease; /* Transition de la couleur du texte */
   }
   
