@@ -57,74 +57,80 @@
   }
 }
 
-.menu__plats{
+.menu__plats {
   display: flex;
   flex-direction: column;
   width: 95%;
-  
-}
-.plat {
-  width: 100%;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-radius: 15px;
-  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
-  background: var(--White, #fff);
-  align-items: center;
-  .plats__list{
-    width: 95%;
-  }
-  .plat__info {
-    margin-bottom: 5px;
-    .plat__title {
-    overflow: hidden;
-    color: #000;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-family: Roboto;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+
+  .plat {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
+    background: var(--White, #fff);
+    align-items: center;
+
+    &__list {
+      width: 95%;
     }
-    .plat__compo {
-    overflow: hidden;
-    color: #000;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-family: Roboto;
-    font-size: 0.94rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-      
+
+    &__info {
+      margin-bottom: 5px;
+
+      &__title {
+        overflow: hidden;
+        color: #000;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: 'Roboto',sans-serif;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      &__compo {
+        overflow: hidden;
+        color: #000;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.94rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
     }
-  }
-  .plat__prix {
-    font-family: 'Roboto',sans-serif;
-    font-size: 0.938rem;
-    font-weight: 700;
-    font-style: normal;
-    color: #353535;
-    line-height: normal;
-    text-align: center;
-    align-self: end;
-    padding-bottom: 7%;
-  }
-  .plat__confirm {
-    color: $color-secondary;
-    font-size: 1.25rem;
-    width: 10%;
-    align-self: center;
-    display: none;
+
+    &__prix {
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.938rem;
+      font-weight: 700;
+      font-style: normal;
+      color: #353535;
+      line-height: normal;
+      text-align: center;
+      align-self: end;
+      padding-bottom: 7%;
+    }
+
+    &__confirm {
+      color: $color-secondary;
+      font-size: 1.25rem;
+      width: 10%;
+      align-self: center;
+      display: none;
+    }
   }
 }
 
 .menu__order {
   text-align: center;
   margin-top: 20px;
+
   .intro__btngradient {
     background: linear-gradient(to right, $color-primary, $color-secondary);
     border: none;
@@ -133,10 +139,5 @@
     border-radius: 25px;
     font-size: 1.125rem;
     cursor: pointer;
-    
   }
 }
-
-  
-
-  
