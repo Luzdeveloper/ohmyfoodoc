@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /***Couleurs***/
 /** width mobile **/
 /*** Responsive ***/
@@ -41,8 +40,22 @@ a {
   max-width: 250px;
 }
 
+.menu__btngradient {
+  width: 218px;
+  height: 50px;
+  color: white;
+  font-size: 1rem;
+  background: linear-gradient(#9356DC, #FF79DA);
+  border-radius: 25px;
+  border: none;
+  font-weight: medium;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  margin: 27px 75px 57px 82px;
+  transition: opacity 300ms ease-in-out;
+}
+
 .button__like {
-  width: 15%;
   flex-shrink: 0;
   position: relative;
   font-size: 25px;
@@ -56,19 +69,18 @@ a {
   transition: background-position 0.4s ease;
 }
 
-.button__like {
-  cursor: pointer;
-}
-
-.button__like i.fas.fa-heart {
+.button__like--menu {
+  flex-shrink: 0;
+  position: relative;
   font-size: 25px;
-  color: #000; /* Couleur du cœur non rempli par défaut */
-  transition: color 0.4s ease; /* Transition de la couleur du texte */
-}
-
-.button__like:hover i.fas.fa-heart,
-.button__like:active i.fas.fa-heart {
-  color: #FF79DA; /* Couleur de remplissage du cœur au survol et au clic */
+  cursor: pointer;
+  background: #000;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border: none;
+  padding: 30px;
+  transition: background-position 0.4s ease;
 }
 
 body, html {
@@ -167,6 +179,8 @@ body, html {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 22px 25px;
   background-color: var(--Grey, #353535);
@@ -472,17 +486,16 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  /*gap: 40px;*/
   background-color: #f6f6f6;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding-left: 17px;
 }
 .menu__info {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 95%;
+  width: 100%;
   justify-content: space-between;
 }
 .menu__banniere {
