@@ -60,13 +60,22 @@
     position: relative;
     font-size: 25px;
     cursor: pointer;
-    background: #000;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
     border: none;
-    padding: 30px;
-    transition: background-position 0.4s ease;
+    margin-right: 15px;
+    background: transparent;
   }
   
-  
+  .fa-heart {
+    color: #fff;
+    padding: .2em;
+    font-weight: bold;
+  }
+  .fa-heart::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: background-position 0.4 ease;
+  }
+  .fa-heart:hover::before {
+    color: $color-primary;
+    cursor: pointer;
+  }

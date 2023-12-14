@@ -24,21 +24,10 @@
     @include cursive__logo;
     font-size: 1.125rem;
     color: white;
-
-    /*@include desktop__responsive {
-      width: 137px;
-      margin: 0;
-    }*/
   }
   &__bloc {
   display: flex;
   flex-direction: column;
-
- /* @include table__responsive {
-    flex-direction: row;
-    align-items: center;
-    gap: 7px;
-  }*/
 }
 
 &__nav {
@@ -46,25 +35,14 @@
   align-items: center;
   font-weight: medium;
   
-
- /* @include table__responsive {
-    width: 100%;
-  }*/
   &--icons {
-    display: flex;
-    flex-direction: flex-start;
     font-size: 0.813rem;
     color: white;
     width: 5%;
+    padding-right: 25px;
   }
   &--info {
     color: white;
-    /*@include table__responsive {
-      & p {
-        width: 100%;
-        justify-content: flex-start;
-        color: white;
-      }*/
     }
   }
 }

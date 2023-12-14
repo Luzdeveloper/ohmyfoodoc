@@ -1,0 +1,27 @@
+.menu__plats .plat {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .menu__plats .plat:nth-child(1) {
+    animation: appear 1s ease 0.5s forwards;
+  }
+  
+  .menu__plats .plat:nth-child(2) {
+    animation: appear 1s ease 1s forwards;
+  }
+  
+  .menu__plats .plat:nth-child(3) {
+    animation: appear 1s ease 1.5s forwards;
+  }
+  
+  @keyframes appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  
