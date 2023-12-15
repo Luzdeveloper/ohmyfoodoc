@@ -44,14 +44,9 @@
     flex-shrink: 0;
     position: relative;
     font-size: 25px;
-    cursor: pointer;
-    background: #000;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
     border: none;
-    padding: 0;
-    transition: background-position 0.4s ease;
+    background: transparent;
+  
   }
 
 
@@ -59,23 +54,27 @@
     flex-shrink: 0;
     position: relative;
     font-size: 25px;
-    cursor: pointer;
     border: none;
     margin-right: 15px;
     background: transparent;
   }
   
   .fa-heart {
-    color: #fff;
-    padding: .2em;
-    font-weight: bold;
+    padding-right: 0.5rem;
   }
-  .fa-heart::before {
-    content: "\f004";
-    font-weight: bold;
-    transition: background-position 0.4 ease;
+  
+  .fa-regular:hover {
+    color: transparent;
+    transform: scale(0);
   }
-  .fa-heart:hover::before {
+  
+  .fa-solid {
+    position: absolute;
+    transform: translateX(-100%);
     color: $color-primary;
-    cursor: pointer;
+    opacity: 0;
   }
+  
+  .fa-solid:hover {
+    opacity: 100;
+    transition: opacity 0.3s;}
