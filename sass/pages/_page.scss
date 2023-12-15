@@ -58,8 +58,7 @@
   padding: 50px 0;
 
   &__title {
-    width: 275px;
-    height: 31px;
+    padding-bottom: 20px;
     color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -151,8 +150,7 @@
   @include table__responsive;*/
 
   &__title {
-    width: 275px;
-    height: 68px;
+    padding-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -164,6 +162,9 @@
   &__container {
     width: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    /* @include desktop__responsive;*/
 
     /*@include table__responsive {
