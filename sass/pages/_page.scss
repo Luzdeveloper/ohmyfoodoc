@@ -1,5 +1,13 @@
 /// Location ///
 
+.fa-solid.fa-location-dot {
+  color: black;
+  opacity: 1; /* Rend l'icône visible sans opacité initiale */
+  transform: none; /* Supprime la translation initiale */
+  position:relative;
+}
+
+
 /* Location Information */
 .info__location {
   display: flex;
