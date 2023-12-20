@@ -15,6 +15,10 @@
   .menu__plats .plat:nth-child(3) {
     animation: appear 1s ease 1.5s forwards;
   }
+
+  .menu__plats .plat:nth-child(4){
+    animation: appear 1s ease 2s forwards;
+  }
   
   @keyframes appear {
     to {
