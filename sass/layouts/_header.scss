@@ -28,11 +28,6 @@
 &__back {
     position: relative;
     font-size: 1.2rem;
-
-    /*@include desktop__responsive{
-        font-size: 2rem;
-    }*/
-}
 }
 
 .logo{
@@ -40,3 +35,16 @@
     flex-direction: row;
     width: 100%;
 }
+}
+
+@media screen and (min-width: 768px) {
+    .header__container {
+        width: 100%; 
+    }
+
+    .header__logo {
+        padding: 0px 30px 0px 16px; 
+    }
+}
+
+

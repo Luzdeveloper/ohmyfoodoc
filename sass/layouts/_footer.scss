@@ -5,15 +5,6 @@
   padding: 22px 25px;
   background-color: var(--Grey, #353535);
 
-  /*@include table__responsive {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    height: 114px;
-    gap: 16px;
-  }*/
-
   & p {
     margin: 5px 0;
     color: white;
@@ -21,29 +12,95 @@
 
   &__logo {
     margin: 0 0 16px 0;
-    @include cursive__logo;
+    @include cursive__logo; // Assuming you have a mixin for cursive logo
     font-size: 1.125rem;
     color: white;
   }
-  &__bloc {
-  display: flex;
-  flex-direction: column;
-}
 
-&__nav {
-  display: flex;
-  align-items: center;
-  font-weight: medium;
-  
-  &--icons {
-    font-size: 0.813rem;
-    color: white;
-    width: 5%;
-    padding-right: 25px;
+  &__bloc {
+    display: flex;
+    flex-direction: column;
   }
-  &--info {
-    color: white;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+    &--icons {
+      font-size: 0.813rem;
+      color: white;
+      width: 5%;
+      padding-right: 25px;
+    }
+
+    &--info {
+      color: white;
     }
   }
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer__content {
+    display: flex;
+    flex-direction: row; // Adjust the layout for tablet screens
+    justify-content: space-between;
+    align-items: center;
+
+    .footer__nav-container,
+    .footer__info-container {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      
+    }
+    .footer__logo{
+      display: flex;
+      flex-direction: row-reverse;
+      order: 2;
+      justify-content: center;
+      margin-bottom: 0px;
+    }
+    .footer__nav--icons {
+      font-size: 0.813rem; 
+    }
+
+    .footer__nav {
+      margin-bottom: 0px; 
+    }
+
+  
+  }
 }
+
+// Media Query for Desktop Screens (1024px and above)
+@media screen and (min-width: 1024px) {
+  .footer__content {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+
+    .footer__logo {
+      margin-bottom: 0;
+      order: 2;
+      justify-content: center;
+    }
+
+    .footer__nav-container,
+    .footer__info-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .footer__nav--icons {
+      font-size: 0.813rem;
+    }
+
+ 
+  }
+}
+}
+
 

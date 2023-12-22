@@ -63,10 +63,10 @@
 .fonction {
   width: 100%;
   margin: auto;
-  padding: 50px 0;
+  padding: 20px 0;
 
   &__title {
-    padding-bottom: 20px;
+    padding-top: 15px;
     color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -250,7 +250,105 @@
 
 .restaurant__content {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 
+
+/* Media Query pour les écrans de tablette (768px à 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Section Fonctionnement */
+  .fonction {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    margin-top: 30px; 
+
+    .fonction__list {
+      display: flex;
+      flex-direction: column;
+
+      .fonction__etape {
+        justify-content: flex-start;
+        width: 80vh;
+        white-space: nowrap;
+
+        .fonction__etape--number {
+          font-size: 1rem; 
+        }
+
+        .fonction__etape--icon {
+          font-size: 1rem; 
+        }
+
+        .fonction__etape--sub {
+          text-align: center;
+          width: 0;
+          height: auto;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  /* Section Restaurants */
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px 0 66px 0; 
+    
+    &__title {
+      padding-left: 10px; 
+    }
+  }
+  
+  .restaurant__cards {
+    height: 28vh; 
+    width: 73vh;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+/* Section Fonctionnement */
+.fonction {
+  display: flex;
+  flex-direction: row;
+  width: 100%; 
+  margin-top: 0; /* Supprimez la marge supérieure pour la section Fonctionnement */
+  gap: 25px;
+}
+
+.fonction__title {
+  padding-left: 20px;
+}
+
+.fonction__list {
+  width: 95%;
+  margin: auto;
+}
+
+}
+
+/* Section Restaurants */
+.restaurant {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
+  gap: 20px; 
+  justify-content: space-between; 
+  margin: auto;
+  padding: 20px 0 66px 0; 
+}
+
+.restaurant__cards {
+  height: 29vh; 
+  border-radius: 15px;
+  background-color: white;
+  @include object-shadow;
+
+  &:hover {
+    @include object-shadow;
+  }
+
+}
