@@ -42,15 +42,18 @@ a {
 }
 
 .menu__btngradient {
-  color: white;
-  font-size: 1rem;
-  background: linear-gradient(#9356DC, #FF79DA);
-  border-radius: 25px;
+  background: linear-gradient(to right, #9356DC, #FF79DA);
   border: none;
-  font-weight: bold;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 1.125rem;
   cursor: pointer;
-  transition: opacity 300ms ease-in-out;
+  transition: background 0.3s ease-in-out; /* Animation de transition */
+}
+
+.menu__btngradient:hover {
+  background: linear-gradient(to right, #FF79DA, #9356DC);
 }
 
 .button__like {
@@ -118,7 +121,7 @@ body, html {
   border-radius: 50%;
   border-top: 5px solid transparent;
   animation: rotate 2s linear infinite;
-  position: center;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -188,6 +191,7 @@ body, html {
 @media screen and (min-width: 768px) {
   .header__container {
     width: 100%;
+    padding-left: 25px;
   }
   .header__logo {
     padding: 0px 30px 0px 16px;
@@ -256,29 +260,30 @@ body, html {
     margin-bottom: 0px;
   }
 }
+
 @media screen and (min-width: 1024px) {
-  .footer .footer__content {
+  .footer__content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  .footer .footer__content .footer__logo {
+  .footer__content .footer__logo {
     margin-bottom: 0;
     order: 2;
     justify-content: center;
   }
-  .footer .footer__content .footer__nav-container,
-  .footer .footer__content .footer__info-container {
+  .footer__content .footer__nav-container,
+  .footer__content .footer__info-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 80px;
   }
-  .footer .footer__content .footer__nav--icons {
+  .footer__content .footer__nav--icons {
     font-size: 0.813rem;
   }
 }
-
 .fa-solid.fa-location-dot {
   color: black;
   opacity: 1; /* Rend l'icône visible sans opacité initiale */
@@ -299,7 +304,7 @@ body, html {
 }
 .info__location__icon {
   display: flex;
-  flex-direction: center;
+  flex-direction: row;
   align-items: center;
 }
 .info__location .location-container {
@@ -330,7 +335,7 @@ body, html {
   width: 85%;
   margin: 0;
   font-size: 1.125rem;
-  font-weight: light;
+  font-weight: lighter;
 }
 
 /* Fonctionnement Section */
@@ -372,9 +377,6 @@ body, html {
 .fonction__etape:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.fonction__etape:hoverfonction__etape--icon {
-  color: #9356DC;
-}
 .fonction__etape--number {
   display: flex;
   align-items: center;
@@ -415,6 +417,7 @@ body, html {
   background-color: var(--Background, #f6f6f6);
 }
 .restaurant__title {
+  padding-top: 15px;
   padding-bottom: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
@@ -422,6 +425,7 @@ body, html {
   font-weight: 700;
   line-height: normal;
   padding-left: 20px;
+  background-color: var(--Background, #f6f6f6);
 }
 .restaurant__container {
   width: 100%;
@@ -439,6 +443,7 @@ body, html {
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  margin: 20px;
 }
 .restaurant__cards:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -550,7 +555,7 @@ body, html {
   }
   .restaurant__cards {
     height: 28vh;
-    width: 73vh;
+    width: 85vh;
     align-self: center;
   }
 }
@@ -559,9 +564,9 @@ body, html {
   .fonction {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 94%;
     margin-top: 0; /* Supprimez la marge supérieure pour la section Fonctionnement */
-    gap: 25px;
+    gap: 31px;
   }
   .fonction__title {
     padding-left: 20px;
@@ -570,27 +575,25 @@ body, html {
     width: 95%;
     margin: auto;
   }
+  /* Section Restaurants */
+  .restaurant {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 0 66px 95px;
+  }
+  .restaurant__cards {
+    height: 28vh;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    width: 80%;
+  }
+  .restaurant__cards:hover {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  }
 }
-/* Section Restaurants */
-.restaurant {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
-  gap: 20px;
-  justify-content: space-between;
-  margin: auto;
-  padding: 20px 0 66px 0;
-}
-
-.restaurant__cards {
-  height: 29vh;
-  border-radius: 15px;
-  background-color: white;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-}
-.restaurant__cards:hover {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-}
-
 .fa-solid.fa-arrow-left {
   color: black;
   opacity: 1; /* Rend l'icône visible sans opacité initiale */
@@ -615,7 +618,7 @@ body, html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 40vh;
+  width: 37vh;
   justify-content: space-around;
 }
 .menu__banniere {
@@ -726,6 +729,60 @@ body, html {
   cursor: pointer;
 }
 
+.plats__list {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles */
+  .menu {
+    margin-top: -50px; /* Adjust as needed */
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .menu__banniere {
+    width: 100%;
+    height: 315px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .menu__info {
+    width: 55%;
+  }
+  .menu__plats .plat {
+    width: 90vw; /* Adjust as needed */
+  }
+  .menu__subtitle {
+    font-size: 1.125rem; /* Adjust as needed */
+    margin-top: 15px; /* Adjust as needed */
+    margin-bottom: 5px; /* Adjust as needed */
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* Desktop Styles */
+  .menu {
+    margin-top: -40px; /* Adjust as needed */
+  }
+  .menu__info {
+    width: 50%;
+  }
+  .menu__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__banniere {
+    max-width: 100%; /* Adjust as needed */
+  }
+  .menu__plats .plat {
+    width: 80vw; /* Adjust as needed */
+  }
+  .menu__subtitle {
+    font-size: 1.25rem; /* Adjust as needed */
+    margin-top: 25px; /* Adjust as needed */
+    margin-bottom: 15px; /* Adjust as needed */
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

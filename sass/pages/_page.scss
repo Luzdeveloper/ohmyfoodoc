@@ -21,7 +21,7 @@
 
   &__icon {
     display: flex;
-    flex-direction: center;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -55,7 +55,7 @@
     width: 85%;
     margin: 0;
     font-size: 1.125rem;
-    font-weight: light;
+    font-weight: lighter;
   }
 }
 
@@ -101,10 +101,6 @@
 
   &:hover {
     @include object-shadow;
-
-    &fonction__etape--icon {
-      color: $color-primary;
-    }
   }
 
   &--number {
@@ -149,6 +145,7 @@
   background-color: var(--Background, #f6f6f6);
 
   &__title {
+    padding-top: 15px;
     padding-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -156,6 +153,7 @@
     font-weight: 700;
     line-height: normal;
     padding-left: 20px;
+    background-color: var(--Background, #f6f6f6);
   }
 
   &__container {
@@ -175,6 +173,7 @@
   border-radius: 15px;
   background-color: white;
   @include object-shadow;
+  margin: 20px;
 
   &:hover {
     @include object-shadow;
@@ -305,7 +304,7 @@
   
   .restaurant__cards {
     height: 28vh; 
-    width: 73vh;
+    width: 85vh;
     align-self: center;
   }
 }
@@ -315,9 +314,9 @@
 .fonction {
   display: flex;
   flex-direction: row;
-  width: 100%; 
+  width: 94%; 
   margin-top: 0; /* Supprimez la marge supérieure pour la section Fonctionnement */
-  gap: 25px;
+  gap: 31px;
 }
 
 .fonction__title {
@@ -329,26 +328,28 @@
   margin: auto;
 }
 
-}
 
 /* Section Restaurants */
+
+
 .restaurant {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
-  gap: 20px; 
   justify-content: space-between; 
   margin: auto;
-  padding: 20px 0 66px 0; 
+  padding: 20px 0 66px 95px; 
+  
 }
 
 .restaurant__cards {
-  height: 29vh; 
+  height: 28vh; 
   border-radius: 15px;
   background-color: white;
   @include object-shadow;
-
+  width: 80%;
   &:hover {
     @include object-shadow;
   }
 
+}
 }
