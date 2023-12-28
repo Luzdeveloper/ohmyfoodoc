@@ -752,18 +752,18 @@ body, html {
     width: 55%;
   }
   .menu__plats .plat {
-    width: 90vw; /* Adjust as needed */
+    width: 90vw;
   }
   .menu__subtitle {
-    font-size: 1.125rem; /* Adjust as needed */
-    margin-top: 15px; /* Adjust as needed */
-    margin-bottom: 5px; /* Adjust as needed */
+    font-size: 1.125rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
 }
 @media only screen and (min-width: 1024px) {
   /* Desktop Styles */
   .menu {
-    margin-top: -40px; /* Adjust as needed */
+    margin-top: -40px;
   }
   .menu__info {
     width: 50%;
@@ -774,15 +774,15 @@ body, html {
     align-items: center;
   }
   .menu__banniere {
-    max-width: 100%; /* Adjust as needed */
+    max-width: 100%;
   }
   .menu__plats .plat {
-    width: 80vw; /* Adjust as needed */
+    width: 80vw;
   }
   .menu__subtitle {
-    font-size: 1.25rem; /* Adjust as needed */
-    margin-top: 25px; /* Adjust as needed */
-    margin-bottom: 15px; /* Adjust as needed */
+    font-size: 1.25rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
   }
 }
 html, body, div, span, applet, object, iframe,
