@@ -337,7 +337,8 @@
   grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
   justify-content: space-between; 
   margin: auto;
-  padding: 20px 0 66px 95px; 
+  padding: 20px 20px 20px 20px;
+  grid-row-gap: 20px; 
   
 }
 
@@ -347,6 +348,7 @@
   background-color: white;
   @include object-shadow;
   width: 80%;
+  margin: auto;
   &:hover {
     @include object-shadow;
   }
