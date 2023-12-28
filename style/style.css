@@ -603,6 +603,12 @@ body, html {
   position: relative;
 }
 
+.menu__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -615,8 +621,10 @@ body, html {
   margin-top: -70px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  width: 100%;
 }
 .menu__info {
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -653,14 +661,19 @@ body, html {
   text-underline-offset: 5px;
 }
 
+.plats__list {
+  width: 100%;
+}
+
 .menu__plats {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
 }
 .menu__plats .plat {
-  width: 93vw;
-  height: 7vh;
+  padding-inline: 5px;
+  padding-block: 10px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
@@ -670,9 +683,6 @@ body, html {
   background: var(--White, #fff);
   align-items: center;
   padding-left: 15px;
-}
-.menu__plats .plat__list {
-  width: 95%;
 }
 .menu__plats .plat__info {
   margin-bottom: 5px;
@@ -731,14 +741,10 @@ body, html {
   cursor: pointer;
 }
 
-.plats__list {
-  width: 100%;
-}
-
 @media only screen and (min-width: 768px) {
   /* Tablet Styles */
   .menu {
-    margin-top: -50px; /* Adjust as needed */
+    margin-top: -50px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
   }
@@ -751,9 +757,6 @@ body, html {
   .menu__info {
     width: 55%;
   }
-  .menu__plats .plat {
-    width: 90vw;
-  }
   .menu__subtitle {
     font-size: 1.125rem;
     margin-top: 15px;
@@ -764,6 +767,7 @@ body, html {
   /* Desktop Styles */
   .menu {
     margin-top: -40px;
+    width: 80%;
   }
   .menu__info {
     width: 50%;
@@ -776,8 +780,8 @@ body, html {
   .menu__banniere {
     max-width: 100%;
   }
-  .menu__plats .plat {
-    width: 80vw;
+  .menu__plats {
+    width: 60%;
   }
   .menu__subtitle {
     font-size: 1.25rem;

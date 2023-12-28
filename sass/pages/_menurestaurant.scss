@@ -7,6 +7,11 @@
   position:relative;
 }
 
+.menu__content {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
 
 .menu {
   display: flex;
@@ -20,8 +25,10 @@
   margin-top: -70px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  
+  width:100%;
+
   &__info{
+    margin-top:20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,15 +69,21 @@
   }
 }
 
+.plats__list {
+  width:100%;
+}
+
+
 .menu__plats {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  width:90%;
+  
   .plat {
-    width: 93vw;
-    height:7vh;
-    margin-bottom: 10px;
+    padding-inline:5px;
+    padding-block: 10px;
+    margin-bottom:10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -79,11 +92,7 @@
     background: var(--White, #fff);
     align-items: center;
     padding-left: 15px;
-
-    &__list {
-      width: 95%;
-    }
-
+    
     &__info {
       margin-bottom: 5px;
 }
@@ -149,16 +158,11 @@
 }
 
 
-
-.plats__list{
-  width: 100%;
-}
-
 @media only screen and (min-width: 768px) {
   /* Tablet Styles */
 
   .menu {
-    margin-top: -50px; /* Adjust as needed */
+    margin-top: -50px; 
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
   }
@@ -173,11 +177,7 @@
     width: 55%;
   }
 
-  .menu__plats {
-    .plat {
-      width: 90vw; 
-    }
-  }
+
 
   .menu__subtitle {
     font-size: 1.125rem; 
@@ -191,6 +191,7 @@
 
   .menu {
     margin-top: -40px; 
+    width:80%;
   }
   .menu__info{
     width: 50%;
@@ -205,9 +206,7 @@
   }
 
   .menu__plats {
-    .plat {
-      width: 80vw; 
-    }
+    width:60%;
   }
 
   .menu__subtitle {
