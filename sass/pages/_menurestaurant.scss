@@ -81,9 +81,9 @@
   width:90%;
   
   .plat {
-    padding-inline:5px;
-    padding-block: 10px;
     margin-bottom:10px;
+    padding-left: 15px;
+    height:60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -91,7 +91,15 @@
     box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
     background: var(--White, #fff);
     align-items: center;
-    padding-left: 15px;
+
+    &:hover .plat__confirm {
+      opacity:1;
+      transform: translateX(0);
+    }
+
+    &:hover .plat__prix {
+      transform:translate(-60px);
+    }
     
     &__info {
       margin-bottom: 5px;
@@ -132,11 +140,30 @@
     }
 
     &__confirm {
-      color: $color-secondary;
+      position:absolute;
+      right:0;
+      transform: translateX(100%);
+      opacity:0;
+      background-color: #99E2D0;
       font-size: 1.25rem;
-      width: 10%;
+      width: 60px;
+      height:60px;
       align-self: center;
-      display: none;
+      z-index:150;
+      display:flex;
+      justify-content: center;
+      align-items:center;
+      border-radius: 0px 15px 15px 0px;
+      transition: all 200ms ease-in-out;
+
+      &__check {
+        font-size:1.4rem;
+        position:relative;
+        transform:translate(0);
+        opacity:1;
+        color:white;
+      transition: translate 200ms ease-in-out;
+      }
     }
   }
 }
