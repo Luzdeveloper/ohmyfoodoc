@@ -101,8 +101,8 @@ body, html {
 }
 
 .loader {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: white;
   position: fixed;
   top: 0;
@@ -115,6 +115,7 @@ body, html {
 }
 
 .wheel {
+  display: flex;
   width: 100px;
   height: 100px;
   border: 5px solid blue;
@@ -122,9 +123,8 @@ body, html {
   border-top: 5px solid transparent;
   animation: rotate 2s linear infinite;
   position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
+  justify-content: center;
 }
 
 @keyframes rotate {
@@ -190,7 +190,7 @@ body, html {
 
 @media screen and (min-width: 768px) {
   .header__container {
-    width: 100%;
+    width: 85%;
     padding-left: 25px;
   }
   .header__logo {
@@ -628,7 +628,7 @@ body, html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 37vh;
+  width: 80%;
   justify-content: space-around;
 }
 .menu__banniere {
@@ -700,7 +700,7 @@ body, html {
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
-  align-self: stretch;
+  white-space: nowrap;
   padding-bottom: 10px;
 }
 .menu__plats .plat__compo {
@@ -710,7 +710,7 @@ body, html {
   font-size: 0.94rem;
   font-style: normal;
   font-weight: 300;
-  align-self: stretch;
+  white-space: nowrap;
 }
 .menu__plats .plat__prix {
   font-family: "Roboto", sans-serif;
@@ -725,8 +725,6 @@ body, html {
   padding-right: 15px;
 }
 .menu__plats .plat__confirm {
-  position: absolute;
-  right: 0;
   transform: translateX(100%);
   opacity: 0;
   background-color: #99E2D0;
