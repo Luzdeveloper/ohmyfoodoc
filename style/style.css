@@ -42,18 +42,19 @@ a {
 }
 
 .menu__btngradient {
-  background: linear-gradient(to right, #9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   border: none;
   color: white;
   padding: 15px 30px;
   border-radius: 25px;
   font-size: 1.125rem;
   cursor: pointer;
-  transition: background 0.3s ease-in-out; /* Animation de transition */
+  transition: opacity 0.3s ease-in-out; /* Animation de transition */
 }
 
 .menu__btngradient:hover {
-  background: linear-gradient(to right, #FF79DA, #9356DC);
+  opacity: 0.88;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .button__like {
@@ -85,7 +86,7 @@ a {
 .fa-solid {
   position: absolute;
   transform: translateX(-100%);
-  color: #9356DC;
+  color: #ca68db;
   opacity: 0;
 }
 
@@ -364,6 +365,7 @@ body, html {
 }
 
 .fonction__etape {
+  width: 90%;
   display: flex;
   align-items: center;
   height: 72px;
@@ -438,7 +440,7 @@ body, html {
 .restaurant__cards {
   display: flex;
   flex-direction: column;
-  height: 29vh;
+  height: 251px;
   margin-bottom: 18px;
   border-radius: 15px;
   background-color: white;
@@ -628,7 +630,7 @@ body, html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 80%;
+  width: 100%;
   justify-content: space-around;
 }
 .menu__banniere {
@@ -646,7 +648,6 @@ body, html {
   width: 100%;
   height: 27px;
   flex-direction: column;
-  padding-left: 16px;
   font-size: 1rem;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -672,12 +673,13 @@ body, html {
   width: 90%;
 }
 .menu__plats .plat {
+  overflow: hidden;
+  right: -10px;
   margin-bottom: 10px;
-  padding-left: 15px;
+  padding-left: 9px;
   height: 60px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   border-radius: 15px;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   background: var(--White, #fff);
@@ -697,7 +699,7 @@ body, html {
   overflow: hidden;
   color: #000;
   font-family: "Roboto", sans-serif;
-  font-size: 1.125rem;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   white-space: nowrap;
@@ -707,14 +709,14 @@ body, html {
   overflow: hidden;
   color: #000;
   font-family: "Roboto", sans-serif;
-  font-size: 0.94rem;
+  font-size: 15px;
   font-style: normal;
   font-weight: 300;
   white-space: nowrap;
 }
 .menu__plats .plat__prix {
   font-family: "Roboto", sans-serif;
-  font-size: 0.938rem;
+  font-size: 15px;
   font-weight: 700;
   font-style: normal;
   color: #353535;
@@ -722,13 +724,16 @@ body, html {
   text-align: center;
   align-self: end;
   padding-bottom: 10px;
-  padding-right: 15px;
+  position: absolute;
+  right: 10px;
 }
 .menu__plats .plat__confirm {
+  position: absolute;
+  right: 0;
   transform: translateX(100%);
   opacity: 0;
   background-color: #99E2D0;
-  font-size: 1.25rem;
+  font-size: 18px;
   width: 60px;
   height: 60px;
   align-self: center;

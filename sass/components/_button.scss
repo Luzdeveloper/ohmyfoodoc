@@ -25,18 +25,19 @@
 }
 
 .menu__btngradient {
-  background: linear-gradient(to right, $color-primary, $color-secondary);
+  @include gradient;
   border: none;
   color: white;
   padding: 15px 30px;
   border-radius: 25px;
   font-size: 1.125rem;
   cursor: pointer;
-  transition: background 0.3s ease-in-out; /* Animation de transition */
+  transition: opacity 0.3s ease-in-out; /* Animation de transition */
 }
 
 .menu__btngradient:hover {
-  background: linear-gradient(to right, $color-secondary, $color-primary);
+  opacity: 0.88;
+  @include object-shadow;
 }
 
 
@@ -72,7 +73,7 @@
   .fa-solid {
     position: absolute;
     transform: translateX(-100%);
-    color: $color-primary;
+    color: #ca68db;
     opacity: 0;
   }
   

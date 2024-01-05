@@ -88,6 +88,7 @@
 }
 
 .fonction__etape {
+  width: 90%;
   display: flex;
   align-items: center;
   height: 72px;
@@ -168,7 +169,7 @@
 .restaurant__cards {
   display: flex;
   flex-direction: column;
-  height: 29vh;
+  height: 251px;
   margin-bottom: 18px;
   border-radius: 15px;
   background-color: white;
