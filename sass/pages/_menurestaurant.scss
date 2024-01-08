@@ -101,10 +101,13 @@
       transform: translate(-60px);
       
     }
+    &:hover .plat_info {
+      width: calc(100% - 110px);
+    }
 
     &__info {
       margin-bottom: 5px;
-      width: 90%;
+     width:calc(100% - 50px);
     }
     &__title {
       color: #000;
@@ -141,7 +144,7 @@
       padding-bottom: 10px;
       height: 30px;
       transition: all 200ms ease-in-out;
-      width: 10%;
+      width: 50px;
     }
 
     &__confirm {

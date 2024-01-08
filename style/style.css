@@ -693,9 +693,12 @@ body, html {
 .menu__plats .plat:hover .plat__prix {
   transform: translate(-60px);
 }
+.menu__plats .plat:hover .plat_info {
+  width: calc(100% - 110px);
+}
 .menu__plats .plat__info {
   margin-bottom: 5px;
-  width: 90%;
+  width: calc(100% - 50px);
 }
 .menu__plats .plat__title {
   color: #000;
@@ -730,7 +733,7 @@ body, html {
   padding-bottom: 10px;
   height: 30px;
   transition: all 200ms ease-in-out;
-  width: 10%;
+  width: 50px;
 }
 .menu__plats .plat__confirm {
   position: absolute;
