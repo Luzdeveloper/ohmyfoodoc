@@ -673,40 +673,30 @@ body, html {
   width: 90%;
 }
 .menu__plats .plat {
-  width: 100%;
-  overflow: hidden;
-  right: -10px;
-  margin-bottom: 10px;
-  padding: 10px;
-  height: 60px;
   display: flex;
-  flex-direction: row;
-  border-radius: 15px;
-  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-  background: var(--White, #fff);
-  align-items: center;
-}
-.menu__plats .plat:hover .plat__confirm {
-  opacity: 1;
-  transform: translateX(0);
-}
-.menu__plats .plat:hover .plat__prix {
-  transform: translate(-60px);
-}
-.menu__plats .plat:hover .plat_info {
-  width: calc(100% - 110px);
+  height: 67px;
+  background-color: white;
+  border: none;
+  border-radius: 0px 15px 15px 0px #d4d4d4;
+  margin-bottom: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
 }
 .menu__plats .plat__info {
-  margin-bottom: 5px;
-  width: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-left: 20px;
+  overflow: hidden;
 }
 .menu__plats .plat__title {
   color: #000;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  padding-bottom: 10px;
+  margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -714,9 +704,9 @@ body, html {
 .menu__plats .plat__compo {
   color: #000;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-style: normal;
+  font-size: 14px;
   font-weight: 300;
+  margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -724,32 +714,23 @@ body, html {
 .menu__plats .plat__prix {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  font-weight: 700;
-  font-style: normal;
-  color: #353535;
-  line-height: normal;
-  text-align: center;
-  align-self: end;
-  padding-bottom: 10px;
-  height: 30px;
-  transition: all 200ms ease-in-out;
-  width: 50px;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100px;
+  background-color: white;
+  color: #000;
 }
 .menu__plats .plat__confirm {
-  position: absolute;
-  right: 0;
-  transform: translateX(100%);
-  opacity: 0;
-  background-color: #99e2d0;
-  font-size: 18px;
-  width: 60px;
-  height: 60px;
-  align-self: center;
+  min-width: 68px;
+  height: 68px;
+  background: #99e2d0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0px 15px 15px 0px;
-  transition: all 300ms ease-in-out;
+  margin-right: -70px;
+  border-radius: 0 15px 15px 0;
 }
 .menu__plats .plat__confirm__check {
   font-size: 1.4rem;
@@ -758,6 +739,10 @@ body, html {
   opacity: 1;
   color: white;
   transition: translate 300ms ease-in-out;
+}
+.menu__plats .plat .plat:hover .plat__check {
+  margin-right: 0;
+  transition: 0.3s;
 }
 
 .menu__order {
