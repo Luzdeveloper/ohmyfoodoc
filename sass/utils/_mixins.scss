@@ -16,3 +16,8 @@
     background: linear-gradient( $color-primary, $color-secondary); 
         @content;
     }
+
+    @mixin color{
+        color: linear-gradient( $color-primary,$color-secondary);
+        @content
+    }

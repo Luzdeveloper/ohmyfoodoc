@@ -55,7 +55,7 @@
     width: 85%;
     margin: 0;
     font-size: 1.125rem;
-    font-weight: lighter;
+    font-weight: 300;
   }
 }
 
@@ -116,6 +116,7 @@
     color: white;
     background-color: $color-primary;
     padding: 1%;
+    margin-left: -12px;
   }
 
   &--icon {

@@ -96,11 +96,12 @@
       width: 100%;
       padding-left: 20px;
       overflow: hidden;
+      line-height: 2;
 
     }
     &__title {
       color: #000;
-      font-family: "Roboto", sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 18px;
       font-weight: 500;
       margin: 0;
@@ -111,7 +112,7 @@
 
     &__compo {
       color: #000;
-      font-family: "Roboto", sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 14px;
       font-weight: 300;
       margin: 0;
@@ -121,7 +122,7 @@
     }
 
     &__prix {
-      font-family: "Roboto", sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 15px;
       font-weight: 500;
       display: flex;
@@ -130,6 +131,7 @@
       width: 100px;
       background-color: white;
       color: #000;
+      padding-bottom: 8px;
       
     }
 
@@ -152,7 +154,7 @@
         transition: translate 300ms ease-in-out;
       }
     }
-    .plat:hover .plat__check{
+    &:hover .plat__confirm{
         margin-right: 0;
         transition: 0.3s;
     }
