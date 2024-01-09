@@ -677,7 +677,7 @@ body, html {
   height: 67px;
   background-color: white;
   border: none;
-  border-radius: 0px 15px 15px 0px #d4d4d4;
+  border-radius: 15px 15px 15px 15px #d4d4d4;
   margin-bottom: 15px;
   overflow: hidden;
   cursor: pointer;
