@@ -271,7 +271,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     white-space: nowrap;
-    padding-left: 51%;
+    padding-left: 58%;
   }
   .footer__content .footer__logo {
     margin-bottom: 0;
@@ -283,7 +283,7 @@ body, html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 80px;
+    gap: 23px;
   }
   .footer__content .footer__nav--icons {
     font-size: 0.813rem;
