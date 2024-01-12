@@ -263,7 +263,7 @@
     display: flex;
     flex-direction: column;
     width: 50vh;
-    margin-top: 30px; 
+    margin-top: 30px;
 
     .fonction__list {
       display: flex;
@@ -291,6 +291,9 @@
       }
     }
   }
+    .fonction__title{
+      padding-left: 20px;
+    }
 
   /* Section Restaurants */
   .restaurant {
@@ -300,7 +303,7 @@
     padding: 20px 0 66px 0; 
     
     &__title {
-      padding-left: 10px; 
+      padding-left: 20px; 
     }
   }
   
@@ -316,13 +319,13 @@
 .fonction {
   display: flex;
   flex-direction: row;
-  width: 94%; 
+  width: 92%; 
   margin-top: 0; /* Supprimez la marge supérieure pour la section Fonctionnement */
   gap: 31px;
 }
 
 .fonction__title {
-  padding-left: 20px;
+  padding-left: 111px;
 }
 
 .fonction__list {
@@ -343,9 +346,10 @@
   grid-row-gap: 20px; 
   
 }
-
+  .restaurant__title{
+  padding-left: 111px;
+}
 .restaurant__cards {
-  height: 28vh; 
   border-radius: 15px;
   background-color: white;
   @include object-shadow;
@@ -355,5 +359,8 @@
     @include object-shadow;
   }
 
+
+
 }
 }
+

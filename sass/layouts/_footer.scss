@@ -12,9 +12,10 @@
 
   &__logo {
     margin: 0 0 16px 0;
-    @include cursive__logo; // Assuming you have a mixin for cursive logo
+    @include cursive__logo;
     font-size: 1.125rem;
     color: white;
+    font-weight: 300;
   }
 
   &__bloc {
@@ -80,6 +81,9 @@
     flex-direction: row; 
     justify-content: space-between; 
     align-items: center; 
+    white-space: nowrap;
+    padding-left: 51%;
+
 
     .footer__logo {
       margin-bottom: 0;
@@ -98,8 +102,6 @@
     .footer__nav--icons {
       font-size: 0.813rem;
     }
-
- 
   }
 }
 
