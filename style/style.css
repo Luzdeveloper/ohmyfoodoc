@@ -242,7 +242,7 @@ body, html {
   .footer .footer__content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
   }
   .footer .footer__content .footer__nav-container,
@@ -270,10 +270,10 @@ body, html {
   .footer__content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     white-space: nowrap;
-    padding-left: 26%;
+    gap: 15px;
   }
   .footer__content .footer__logo {
     margin-bottom: 0;
@@ -528,7 +528,7 @@ body, html {
   .fonction {
     display: flex;
     flex-direction: column;
-    width: 50vh;
+    width: 100%;
     margin-top: 30px;
   }
   .fonction .fonction__list {
@@ -537,7 +537,7 @@ body, html {
   }
   .fonction .fonction__list .fonction__etape {
     justify-content: flex-start;
-    width: 80vh;
+    width: 100%;
     white-space: nowrap;
   }
   .fonction .fonction__list .fonction__etape .fonction__etape--number {
@@ -566,8 +566,7 @@ body, html {
     padding-left: 20px;
   }
   .restaurant__cards {
-    height: 28vh;
-    width: 85vh;
+    width: 95%;
     align-self: center;
   }
 }

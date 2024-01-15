@@ -44,8 +44,8 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .footer__content {
     display: flex;
-    flex-direction: row; // Adjust the layout for tablet screens
-    justify-content: space-between;
+    flex-direction: row; 
+    justify-content: flex-end;
     align-items: center;
 
     .footer__nav-container,
@@ -79,10 +79,10 @@
   .footer__content {
     display: flex;
     flex-direction: row; 
-    justify-content: space-between; 
+    justify-content: flex-end; 
     align-items: center; 
     white-space: nowrap;
-    padding-left: 26%;
+    gap: 15px;
 
 
     .footer__logo {

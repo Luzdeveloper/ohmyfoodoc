@@ -262,7 +262,7 @@
   .fonction {
     display: flex;
     flex-direction: column;
-    width: 50vh;
+    width: 100%;
     margin-top: 30px;
 
     .fonction__list {
@@ -271,7 +271,7 @@
 
       .fonction__etape {
         justify-content: flex-start;
-        width: 80vh;
+        width: 100%;
         white-space: nowrap;
 
         .fonction__etape--number {
@@ -308,8 +308,8 @@
   }
   
   .restaurant__cards {
-    height: 28vh; 
-    width: 85vh;
+    
+    width: 95%;
     align-self: center;
   }
 }
