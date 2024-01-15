@@ -45,34 +45,35 @@
   .footer__content {
     display: flex;
     flex-direction: row; 
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-end; 
+    align-items: center; 
+    white-space: nowrap;
+    gap: 15px;
+
+
+    .footer__logo {
+      margin-bottom: 0;
+      order: 2;
+      justify-content: center;
+    }
 
     .footer__nav-container,
     .footer__info-container {
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: row;
       align-items: center;
-      
+      gap: 23px;
     }
-    .footer__logo{
-      display: flex;
-      flex-direction: row-reverse;
-      order: 2;
-      justify-content: center;
-      margin-bottom: 0px;
-    }
+
     .footer__nav--icons {
-      font-size: 0.813rem; 
+      font-size: 0.813rem;
     }
-
-    .footer__nav {
-      margin-bottom: 0px; 
-    }
-
-  
   }
-}}
+}
+
+
+
+
 
 // Media Query for Desktop Screens (1024px and above)
 @media screen and (min-width: 1024px) {
@@ -104,6 +105,6 @@
     }
   }
 }
-
+}
 
 
